@@ -30,7 +30,7 @@ function move(element) {
             if(direction === 'south'){
                 y = y - 1
             }
-            callback(direction)
+            
         
             element.style.left = x + 'px'
             element.style.bottom = y + 'px'
@@ -51,6 +51,7 @@ function move(element) {
             if(e.key === 's'){
                 direction = 'south'
             }
+            callback(direction)
         
         })
         
