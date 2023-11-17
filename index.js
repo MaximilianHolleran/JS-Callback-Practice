@@ -26,16 +26,6 @@ function handleDirectionChange(direction){
 
 move(character).withArrowKeys(100,250,handleDirectionChange)
 
-function backgroundImage(asset, left, bottom){
-    let image = document.createElement('img')
-    image.src = asset
-    image.style.position = 'fixed'
-    image.style.left = left
-    image.style.bottom = bottom
-    document.body.append(image)
-}
-
-
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
 move(newImage('assets/pine-tree.png')).to(450, 350)
