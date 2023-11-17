@@ -8,6 +8,7 @@ function newInventory(){
     inventory.style.justifyContent = 'space-evenly'
     inventory.style.border = '2px solid black'
     inventory.style.backgroundColor = 'brown'
+    inventory.style.zIndex = +1
     document.body.append(inventory)
     return inventory
 }
